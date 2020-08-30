@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3CPir/fb5Imhyji70kGhMEjNbfFa+HPVMFqzv5RVVxI0IHqcLHzSUwdLPIuAZrwUBmEoZPRPoDOMK9CcYnafVA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jerma\\source\\repos\\MQAcademy\\MQAcademyWS.Tests\\MQAcademyWS.Tests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jerma\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jerma\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

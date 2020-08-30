@@ -1,0 +1,86 @@
+﻿@page
+@model MQAcademyWS.Pages.CreateGroupModel
+@{
+    ViewData["Title"] = "Create Group";
+}
+
+
+<!-- Content -->
+<div class="page-content">
+    <!-- Slider -->
+    <div class="section-full bg-img-fix p-t100 p-b80 overlay-black-light our-projects-galery" style="background-image:url(../images/main-slider/slide1.jpg);">
+        <div class="container m-t50">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 m-b30">
+                    <div class="p-lr40 p-t30 rdx-book-now-form p-b40 clearfix bg-white ">
+                        <form method="post" class="" action="">
+                            <input type="hidden" value="Appoinment" name="">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-center m-b30">
+                                    <h2 class=" m-t0 m-b10 ">Info and<span class="text-primary"> Private Groups </span></h2>
+                                    <div class="rdx-separator-outer">
+                                        <div class="rdx-separator bg-primary style-liner"></div>
+                                    </div>
+                                    <p class="title-small ">Do you want to start a group with your close friends and or family? Build your own Quester group and enjoy Mastery Quest at a location of your choosing.</p>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <input name="dzName" class="form-control" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <input name="dzEmail" class="form-control" placeholder="Email" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <input name="dzOther[date]" class="form-control" placeholder="Select Date" type="date">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <select class="bs-select-hidden" name="dzOther[service]">
+                                            <option value="Yoda">Construct</option>
+                                            <option value="Wait Loss">Architecture</option>
+                                            <option value="Cardio">Consulting</option>
+                                            <option value="Gym">Mechanical</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <textarea name="dzMessage" rows="4" class="form-control" required=""></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                                    <div class="dzFormMsg "></div>
+                                    <button name="Reset" value="Reset" type="reset" class="site-button skew-secondry"><span>Reset</span></button>
+                                    <button name="submit" type="submit" value="Submit" class="site-button skew-secondry"><span>Submit</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="rdx-book-now-content text-white">
+                        <h2 class="h2">Why Quest?</h2>
+                        <div class="rdx-separator bg-white"></div>
+                        <p>Our immersive role-play environment develops practical and academic knowledge across various subject matters. Through participating in a Quest, students develop high levels of listening, speaking, writing, and reading comprehension skills, while expanding their practical understanding of finances and mathematic concepts applied to the various science disciplines.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider END -->
+
+
+</div>
+<!-- Content END-->
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
+
